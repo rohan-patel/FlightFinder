@@ -70,7 +70,7 @@ public class Flight implements Comparable<Flight> {
 		if (arrivalTime.isAfter(flight.arrivalTime)) {
 			return 1;
 		}
-		else if (arrivalTime.isAfter(flight.arrivalTime)) {
+		else if (arrivalTime.isBefore(flight.arrivalTime)) {
 			return -1;
 		}
 		else {
